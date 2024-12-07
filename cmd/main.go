@@ -16,12 +16,12 @@ func init() {
 	global.SetDB(gormx.Must(gormx.WithConfig(config.Config.Mysql), gormx.WithDebug()))
 }
 
-// @title PaymentEngine
+// @title Web System
 // @version 1.0
-// @description 这是一个管理银行以及银行卡的一体化系统
+// @description This Is A Web System
 // @termsOfService http://example.com/terms/
 
-// @host localhost:7068
+// @host localhost:8080
 // @BasePath /
 func main() {
 	server.Run(server.WithServer(http.New()))
